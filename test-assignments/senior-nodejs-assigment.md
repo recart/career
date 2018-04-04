@@ -26,7 +26,7 @@ The conversion of the `value` from the original currency to USD is a time consum
 
 The endpoint should return either 200 or 500 response code and "OK" or the error message in the body.
 
-Oh and write good tests that prove that your API works properly ;)
+You don't need to set up a Shopify store or anything like that. Just copy the dummy webhook data from the documentation and write good tests that prove that your API works properly ;)
 
 ---
 
