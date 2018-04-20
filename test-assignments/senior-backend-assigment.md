@@ -1,6 +1,6 @@
 # Recart 
 
-### NodeJS Senior Test Assignment
+### Senior Back-end Test Assignment
 
 Most of our users are on the Shopify platform and [Recart](https://apps.shopify.com/recart) handles a bunch of different Shopify webhooks to gather the necessary data for their customers. For example we receive webhooks when customers update their cart (by adding or removing products).
 
@@ -30,8 +30,10 @@ You don't need to set up a Shopify store or anything like that. Just copy the du
 
 ---
 
-The goal of the assignment is to get a picture of your programming skills and coding style. Don't stress if you can't get every part done -- spend a maximum of 5 hours on this. We'll discuss your solution in person so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
+The goal of the assignment is to get a picture of your programming skills and coding style. We prefer NodeJS or Go but you can choose any programming language that you're comfortable with.
+
+Don't stress if you can't get every part done -- spend a maximum of 5 hours on this. We'll discuss your solution in person so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
 
 Feel free to ask questions to clarify the business need and the details. Also, try to estimate what can be done within the 5 hours time frame and let us know if we need to cut the scope.
 
-Submit your your code through `bitbucket.org` by creating a **private** repository and sharing it with the following users: `foobarkk`, `namenyi`, `Hunrik`, `Gerifield`.
+Submit your your code through `bitbucket.org` by creating a **private** repository and sharing it with the following users: `foobarkk`, `namenyi`, `Hunrik`.
