@@ -36,4 +36,4 @@ Don't stress if you can't get every part done -- spend a maximum of 5 hours on t
 
 Feel free to ask questions to clarify the business need and the details. Also, try to estimate what can be done within the 5 hours time frame and let us know if we need to cut the scope.
 
-Submit your your code through `bitbucket.org` by creating a **private** repository and sharing it with the following users: `foobarkk`, `namenyi`, `Hunrik`.
+Submit your your code through `bitbucket.org` by creating a **private** repository and sharing it with the `recart` user.
