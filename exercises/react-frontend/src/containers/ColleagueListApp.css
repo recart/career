@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #F4F3F0;
+}
+
+:local(.ColleagueList) {
+  background-color: #3498db;
+  border: 1px solid #E3E3E3;
+}
+
+:local(.FavoritesList) {
+  background-color: #e67e22;
+  border: 1px solid #E3E3E3;
+}
+
+.app-wrapper {
+  margin-top: 100px;
+}
+
+h2 {
+  margin: 15px 10px;
+  padding-left: 10px;
+
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Helvetica;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
