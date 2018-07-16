@@ -19,6 +19,8 @@ The goal of this exercise is to test your front-end development skills on a pred
 
 ## Usage
 
+Starting library: `career/exercises/react-frontend`
+
 ```
 npm install
 npm start
