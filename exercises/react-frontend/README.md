@@ -12,7 +12,6 @@ The goal of this exercise is to test your front-end development skills on a pred
   - This field’s value should be presented in the colleague list.
 - Write unit test in any testing framework you prefer on every new code you write.
   - Hint: Our recommended unit testing framework is JEST.
-  - Optional task: Write some tests for the AddColleagueInput component.
 
 ## Usage
 
