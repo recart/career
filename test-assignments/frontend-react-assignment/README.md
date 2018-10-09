@@ -24,7 +24,7 @@ Submit your code through `BitBucket` by creating a private repository and sharin
 
 ## Usage
 
-Starting library: `career/exercises/react-frontend`
+Download / clone this repository and run these commands in this directory:
 
 ```
 npm install
