@@ -3,7 +3,7 @@
 ### Infrastructure Engineer Test Assignment
 
 Your task is to create a request caching solution by implementing an Nginx module in Lua, 
-without using the built-in request cache of Nginx. Use Redis as storage.
+without using the built-in request cache of Nginx. It should only work for GET requests. Use Redis as storage.
 
 An ideal solution would have a few basic tests to cover the functionality. 
 
