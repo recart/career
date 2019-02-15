@@ -19,6 +19,6 @@ The goal of the assignment is to
 Don't stress if you can't get every part done -- spend a maximum of 5 hours on this. 
 We'll discuss your solution in person so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
 
-Feel free to ask questions to clarify the business need and the details.
+Feel free to ask questions to clarify the details.
 
 Submit your your code through `bitbucket.org` by creating a **private** repository and sharing it with the `recart` user.
