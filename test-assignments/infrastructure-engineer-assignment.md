@@ -9,6 +9,8 @@ An ideal solution would have a few basic tests to cover the functionality.
 
 We also love to see things in action, so ideally we could spin up and start the whole thing with docker-compose.
 
+You can use http://httpstat.us/ as a fake API.
+
 ---
 
 The goal of the assignment is to
