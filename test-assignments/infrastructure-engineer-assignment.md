@@ -5,11 +5,15 @@
 Your task is to create a request caching solution by implementing an Nginx module in Lua, 
 without using the built-in request cache of Nginx. It should only work for GET requests. Use Redis as storage.
 
-An ideal solution would have a few basic tests to cover the functionality. 
+#### Extras
 
-We also love to see things in action, so ideally we could spin up and start the whole thing with docker-compose.
+- An ideal solution would have a few basic tests to cover the functionality. 
+- We love to see things in action, so ideally we could spin up and start the whole thing with docker-compose.
 
-You can use http://httpstat.us/ as a fake API.
+#### Hints
+
+- You can use http://httpstat.us/ as a fake API
+- You can use OpenResty if you want
 
 ---
 
