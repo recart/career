@@ -2,7 +2,11 @@
 
 ### Senior Back-end Test Assignment
 
-The goal of the assignment is to get a picture of your programming skills and coding style. We prefer NodeJS or Go but you can choose any programming language that you're comfortable with.
+The goal of the assignment is to get a picture of your programming skills and coding style.
+
+We prefer NodeJS or Go but you can choose any programming language that you're comfortable with.
+
+You can use 3rd party frameworks and libraries when absolutely needed, but try to choose lightweight ones because we'd like to see how **YOU** think and code. Koa (NodeJS), Flask (Python) or Sinatra (Ruby) are good examples of frameworks that give you just the basics and let you figure out the rest.
 
 Don't stress if you can't get every part done -- spend a maximum of 5 hours on this. We'll discuss your solution in person so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
 
