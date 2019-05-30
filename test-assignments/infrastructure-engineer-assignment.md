@@ -27,4 +27,4 @@ We'll discuss your solution in person so you'll get a chance to tell us what els
 
 Feel free to ask questions to clarify the details.
 
-Submit your your code through `bitbucket.org` by creating a **private** repository and sharing it with the `recart` user.
+Submit your your code through `bitbucket.org` by creating a **private** repository and sharing it with the `david.namenyi+bitbucket@recart.com` email address.
