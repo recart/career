@@ -12,22 +12,33 @@ Feel free to ask questions to clarify the business need and the details. Also, t
 
 Submit your your code through `bitbucket.org` by creating a **private** repository and sharing it with the `david.namenyi+bitbucket@recart.com` email address.
 
+---
+
 ### Description
 
-Let's say we have a partner called Awesome Reviews. They send a request to the customer to write a review about the product they order. To do this, they'll need to know when a purchase happened, so they subscribe to our `orders` webhook to get notified about the new orders.
+Your task is to create a service which can notify integration partners about events in our system.
 
-Your task is to create a service which can notify partners about events in our system.
+For example: let's say we have a partner called Awesome Reviews. They send requests to the customers to write a review about the products they order. To do this, they'll need to know when a purchase happens, so they subscribe to our `orders` webhook to get notified about all new orders.
 
-Requirements
-* Check if the partner is subscribed to the event, if yes send a POST message to the endpoint what they provided.
-* You can freely choose the message source (SQS, NSQ, NATS preferred but you can use other technologies )
+##### Requirements:
+
+* Check if the partner is subscribed to the event. If yes, send a POST request to the endpoint they provided.
+* You can freely choose the message source. We prefer SQS, NSQ or NATS, but you can use other technologies too.
 * You can freely choose the database to store the partner related data.
-* It should retry failed messages
-* Handle multiple event categories
+* It should retry failed requests.
+* It should handle multiple event types.
 
-Nice to have features:
-* Add monitoring for the service, so we can see the partner's api latency, error rate
-* Security
-* Easily extendable, easy to add new events
-* Messages can be reformatted, Eg.: omit, rename properties, or event map to a new structure
-* For large campaigns there can be spikes, so it's nice to have ratelimit the requests towards our partners. Additionally it's nice if the partner can specify their ratelimit. But be careful, if one partner hits the ratelimit, it shouldn't affect the other site's performance!
+##### Some optional extras we would love to see: 
+
+* Think about security
+* Make it easily extendable and easy to add new events
+* Add monitoring for the service, so we can see the partner's API latency and error rate.
+* Add a way to reformat messages, e.g. omit, rename properties, or map an event to a new structure
+
+---
+
+### Something to think about
+
+When we send large marketing campaigns, there can be spikes in traffic, so a rate-limiting solution would be very helpful. For example, the partners could specify their own our rate limits and we could throttle the requests. However, if one partner hits the rate limit, it shouldn't affect the other partners' performance!
+
+Think about how you would approach this problem and we can discuss it in person :) 
