@@ -1,10 +1,12 @@
-# Recart
+# Recart 
 
-### Senior Back-end Test Assignment
+### Back-end Test Assignment
 
 The goal of the assignment is to get a picture of your programming skills and coding style.
 
 We prefer NodeJS or Go but you can choose any programming language that you're comfortable with.
+
+Feel free to use 3rd party frameworks and libraries when needed, but try to choose lightweight ones because we'd also like to see how you think and code. Koa (NodeJS), Flask (Python) or Sinatra (Ruby) are good examples of frameworks that give you just the basics and let you figure out the rest.
 
 Don't stress if you can't get every part done -- spend a maximum of 5 hours on this. We'll discuss your solution in person so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
 
@@ -12,22 +14,31 @@ Feel free to ask questions to clarify the business need and the details. Also, t
 
 Submit your your code through `bitbucket.org` by creating a **private** repository and sharing it with the `david.namenyi+bitbucket@recart.com` email address.
 
+---
+
 ### Description
 
-Let's say we have a partner called Awesome Reviews. They send a request to the customer to write a review about the product they order. To do this, they'll need to know when a purchase happened, so they subscribe to our `orders` webhook to get notified about the new orders.
 
-Your task is to create a service which can notify partners about events in our system.
+Most of our users are on the Shopify platform and [Recart](https://apps.shopify.com/recart) handles a bunch of different Shopify webhooks to gather the necessary data for their customers. For example we receive webhooks when customers update their cart (by adding or removing products).
 
-Requirements
-* Check if the partner is subscribed to the event, if yes send a POST message to the endpoint what they provided.
-* You can freely choose the message source (SQS, NSQ, NATS preferred but you can use other technologies )
-* You can freely choose the database to store the partner related data.
-* It should retry failed messages
-* Handle multiple event categories
+Your task is to create an API that has a single HTTP endpoint which handles all incoming webhooks.
 
-Nice to have features:
-* Add monitoring for the service, so we can see the partner's api latency, error rate
-* Security
-* Easily extendable, easy to add new events
-* Messages can be reformatted, Eg.: omit, rename properties, or event map to a new structure
-* For large campaigns there can be spikes, so it's nice to have ratelimit the requests towards our partners. Additionally it's nice if the partner can specify their ratelimit. But be careful, if one partner hits the ratelimit, it shouldn't affect the other site's performance!
+Check out the [Shopify API documentation](https://help.shopify.com/api/reference/webhook) to learn how webhooks work. In this first version, we only need to handle the `carts/create` and `carts/update` topics but structure the app in a way that will make it easy to add more handlers in the future. (The `carts/create` and `carts/update` webhooks should actually perform the same task.)
+
+Use a database of your choice to store these data:
+- Shopify shops with 2 main properties: domain and currency
+- User sessions (which shop it belongs to, shopifyCartId, cart data)
+
+When we receive the webhook, the session is already present in the database and you can find it by `shopifyCartId` (which should equal the `id` property of the webhook data).
+
+Write these pieces of information onto the session:
+- currency (as stored in our own database for the shop)
+- value (sum of the price of the products in the cart)
+- valueUSD (same, but converted to USD)
+- itemCount (number of products in the cart)
+
+We process many webhooks and neither the order of messages nor exactly-once delivery is guaranteed. Make sure you don't overwrite a session with outdated cart data. The ensure this, you can use `updated_at` parameter which is missing from the documentation but is actually included in the webhook data.
+
+The conversion of the `value` from the original currency to USD is a time consuming task. To avoid long processing time, make it asyncronous. It's okay to update the session later with the converted value. If your solution to this would take too long to implement, you can leave it out but let us know how you'd approach this.
+
+You don't need to set up a Shopify store or anything like that. Just copy the dummy webhook data from the documentation and write good tests that prove that your API works properly ;)
