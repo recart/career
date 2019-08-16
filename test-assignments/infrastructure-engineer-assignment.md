@@ -22,8 +22,7 @@ The goal of the assignment is to
 - prove that you understand the main concepts of how the web works and what containerization is 
 - and see how you write code in a language you're potentially unfamiliar with.
 
-Don't stress if you can't get every part done -- spend a maximum of 5 hours on this. 
-We'll discuss your solution in person so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
+Don't stress if you can't get every part done -- spend a maximum of 5 hours on this assignment. Feel free to add comments or README notes to help us understand your thinking and decisions. If we like your code overall, we'll discuss the solution in person too so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
 
 Feel free to ask questions to clarify the details.
 
