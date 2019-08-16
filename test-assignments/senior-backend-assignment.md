@@ -6,7 +6,7 @@ The goal of the assignment is to get a picture of your programming skills and co
 
 We prefer NodeJS or Go but you can choose any programming language that you're comfortable with.
 
-Don't stress if you can't get every part done -- spend a maximum of 5 hours on this. We'll discuss your solution in person so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
+Don't stress if you can't get every part done -- spend a maximum of 5 hours on this assignment. Feel free to add comments or README notes to help us understand your thinking and decisions. If we like your code overall, we'll discuss the solution in person too so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
 
 Feel free to ask questions to clarify the business need and the details. Also, try to estimate what can be done within the 5 hours time frame and let us know if we need to cut the scope.
 
