@@ -4,7 +4,7 @@
 
 The goal of this exercise is to test your front-end development skills on a pre-defined project. 
 
-Don't stress if you can't get every part done -- spend a maximum of 5 hours on this assignment. We'll discuss your solution in person so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
+Don't stress if you can't get every part done -- spend a maximum of 5 hours on this assignment. Feel free to add comments or README notes to help us understand your thinking and decisions. If we like your code overall, we'll discuss the solution in person too so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
 
 The main objective is that the code you submit is well-structured and covered with unit tests.
 
