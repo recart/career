@@ -12,7 +12,7 @@ without using the built-in request cache of Nginx. It should only work for GET r
 
 #### Hints
 
-- You can use https://docs.postman-echo.com/ as a fake API
+- You can use [postman-echo](https://docs.postman-echo.com/) as a fake API
 - You can use OpenResty if you want
 
 ---
