@@ -36,4 +36,4 @@ To calculate the above KPIs you should use the conversation model ([https://deve
 
 ### Something to think about
 
-How would you build up a general enough ETL system to move customer data into a data warehouse where our product managers can use to to analyse the usage of our features?
+How would you build up a general enough ETL system to move customer data into a data warehouse that our product managers can use to analyze the usage of our features?
