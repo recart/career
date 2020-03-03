@@ -1,6 +1,6 @@
 # Recart 
 
-### Business Inteligence Test Assignment
+### Business Intelligence Test Assignment
 
 The goal of the assignment is to get a picture of your programming skills and coding style.
 
