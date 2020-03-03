@@ -18,7 +18,7 @@ Submit your code through `bitbucket.org` by creating a **private** repositor
 
 We use Intercom on our website and also on our Dashboard to communicate with our users or with anyone who is interested in using Recart. Our Customer Success team depends mainly on Intercom.
 
-To make sure we can hit desired customer retention we need to measure how good our performance is, so we defined the following KPIs:
+To give our customers a great support experience we need to measure how good our performance is, so we defined the following KPIs:
 
 - Median first response time (in minutes)
 - Median time to close (in hours)
