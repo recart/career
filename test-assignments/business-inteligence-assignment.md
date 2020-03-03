@@ -23,7 +23,7 @@ To make sure we can hit desired customer retention we need to measure how good o
 - Median first response time (in minutes)
 - Median time to close (in hours)
 
-Your task is to synchronize data from Intercom to an RDBMS engine and create a query that could be used as a KPI for our customer success team. Intercom gives free trial to every developer. 
+Your task is to synchronize data from Intercom to an RDBMS engine and write queries that return the data for the KPIs. Intercom gives free trial to every developer.
 
 To calculate the above KPIs you should use the conversation model ([https://developers.intercom.com/intercom-api-reference/reference#conversation-model](https://developers.intercom.com/intercom-api-reference/reference#conversation-model)).
 
