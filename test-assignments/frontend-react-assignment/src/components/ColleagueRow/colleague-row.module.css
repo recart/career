@@ -1,0 +1,17 @@
+.colleagueRow {
+  background-color: #fff;
+    height: 60px;
+    flex: 1;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.colleagueRow button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.colleague {
+  margin: 0;
+  font-weight: 500;
+}
