@@ -22,7 +22,7 @@ For example: let's say we have a partner called Awesome Reviews. They send reque
 
 ##### Requirements:
 
-* Check if the partner is subscribed to the event. If yes, send a POST request to the endpoint they provided.
+* Check which partners are subscribed to the event and send them a POST request to the endpoint they provided.
 * You can freely choose the message source. We prefer SQS, NSQ or NATS, but you can use other technologies too.
 * You can freely choose the database to store the partner related data.
 * It should retry failed requests.
