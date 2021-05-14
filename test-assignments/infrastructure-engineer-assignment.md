@@ -26,4 +26,4 @@ Don't stress if you can't get every part done -- spend a maximum of 5 hours on t
 
 Feel free to ask questions to clarify the details.
 
-Submit your code through `bitbucket.org` by creating a **private** repository and sharing it with the `david.namenyi+bitbucket@recart.com` email address.
+Submit your code through `bitbucket.org` by creating a **private** repository and sharing it with the `developer-account@recart.com` email address.
