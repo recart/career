@@ -7,7 +7,7 @@ Your task is to create an API with the endpoints that are documented below. We r
 The goal of the assignment is to get a picture of your programming skills and coding style. Don't stress if you can't get every part done -- spend a maximum of 5 hours on this assignment. Feel free to add comments or README notes to help us understand your thinking and decisions. If we like your code overall, we'll discuss the solution in person too so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
 
 
-Submit your code through `bitbucket.org` by creating a **private** repository and sharing it with the `david.namenyi+bitbucket@recart.com` email address.
+Submit your code through `bitbucket.org` by creating a **private** repository and sharing it with the `developer-account@recart.com` email address.
 
 Please also provide setup / deploy instructions along with your code, preferrably in the README file. If you write tests, tell us how to run them (e.g.: `npm test`).
 
