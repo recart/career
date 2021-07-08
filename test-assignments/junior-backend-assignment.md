@@ -1,8 +1,8 @@
 # Recart 
 
-### NodeJS Junior Test Assignment: Weather forecast API
+### Junior Backend Home Assignment: Weather forecast API
 
-Your task is to create an API with the endpoints that are documented below. We recommend that you use the [Koa framework](https://github.com/koajs/koa/), but it's okay if you choose something else.
+Your task is to create an API with the endpoints that are documented below. We recommend that you use Node.js with [Koa framework](https://github.com/koajs/koa/) or Golang, but it's okay if you choose any other programming language for the implementation.
 
 The goal of the assignment is to get a picture of your programming skills and coding style. Don't stress if you can't get every part done -- spend a maximum of 5 hours on this assignment. Feel free to add comments or README notes to help us understand your thinking and decisions. If we like your code overall, we'll discuss the solution in person too so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
 
