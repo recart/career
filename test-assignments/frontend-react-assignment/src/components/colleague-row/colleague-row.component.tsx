@@ -1,19 +1,17 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import cn from 'classnames'
-
-import { Colleague } from '../../store/types/colleague.type'
-import { removeColleague, favoriteColleague } from '../../store/actions'
-import styles from './colleague-row.module.css'
-import { ReactComponent as StarIcon } from '../../assets/star.svg'
 import { ReactComponent as StarFillIcon } from '../../assets/star-fill.svg'
+import { ReactComponent as StarIcon } from '../../assets/star.svg'
 import { ReactComponent as TrashIcon } from '../../assets/trash.svg'
+import { favoriteColleague, removeColleague } from '../../store/actions'
+import { Colleague } from '../../store/types/colleague.type'
 
 interface ColleagueProps {
   index: number
   colleague: Colleague
 }
-export const ColleagueRow: React.FC<ColleagueProps> = (props) => {
+
+export function ColleagueRow(props: ColleagueProps) {
   const { colleague, index } = props
   const dispatch = useDispatch()
 
@@ -26,19 +24,19 @@ export const ColleagueRow: React.FC<ColleagueProps> = (props) => {
   }
 
   return (
-    <div className={cn("row justify-content-between", styles.colleagueRow)}>
-      <p className={styles.colleague}>{colleague.name}</p>
-      <div>
+    <div className='flex justify-between items-center px-2 h-16 bg-white'>
+      <p className='font-semibold'>{colleague.name}</p>
+      <div className='space-x-2'>
         <button
-          type="button"
-          className="btn btn-light"
+          type='button'
+          className='bg-gray-200 p-2 border border-gray-400 rounded hover:bg-gray-100'
           onClick={handleFavorite}
         >
           {colleague.favorite ? <StarFillIcon /> : <StarIcon />}
         </button>
         <button
-          type="button"
-          className="btn btn-light"
+          type='button'
+          className='bg-gray-200 p-2 border border-gray-400 rounded hover:bg-gray-100'
           onClick={handleDelete}
         >
           <TrashIcon />
