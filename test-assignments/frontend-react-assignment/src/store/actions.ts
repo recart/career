@@ -20,7 +20,10 @@ interface FavoriteColleagueAction {
   favorite: boolean
 }
 
-export type ColleagueActionTypes = CreateColleagueAction | RemoveColleagueAction | FavoriteColleagueAction
+export type ColleagueActionTypes =
+  | CreateColleagueAction
+  | RemoveColleagueAction
+  | FavoriteColleagueAction
 
 export function createColleague(colleague: Colleague): ColleagueActionTypes {
   return {

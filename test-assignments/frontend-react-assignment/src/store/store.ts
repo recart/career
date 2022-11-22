@@ -11,7 +11,4 @@ const rootReducer = combineReducers({
   colleagues: colleaguesReducer
 })
 
-export const store: Store<AppState> = createStore(
-  rootReducer,
-  composeWithDevTools()
-)
+export const store: Store<AppState> = createStore(rootReducer, composeWithDevTools())
