@@ -1,6 +1,6 @@
-import React, { ChangeEvent, useState } from 'react'
+import { ChangeEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { createColleague } from '../../store/actions'
+import { addColleague } from '../../store/reducers/colleagues.reducer'
 
 export function AddColleague() {
   const [name, setName] = useState('')
@@ -11,12 +11,7 @@ export function AddColleague() {
   }
 
   function handleAddColleague() {
-    dispatch(
-      createColleague({
-        name,
-        favorite: false,
-      })
-    )
+    dispatch(addColleague({ name, favorite: false }))
   }
 
   return (

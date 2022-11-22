@@ -1,9 +1,8 @@
-import React from 'react'
 import { useDispatch } from 'react-redux'
 import { ReactComponent as StarFillIcon } from '../../assets/star-fill.svg'
 import { ReactComponent as StarIcon } from '../../assets/star.svg'
 import { ReactComponent as TrashIcon } from '../../assets/trash.svg'
-import { favoriteColleague, removeColleague } from '../../store/actions'
+import { favoriteColleague, removeColleague } from '../../store/reducers/colleagues.reducer'
 import { Colleague } from '../../store/types/colleague.type'
 
 interface ColleagueProps {
@@ -16,11 +15,11 @@ export function ColleagueRow(props: ColleagueProps) {
   const dispatch = useDispatch()
 
   function handleDelete() {
-    dispatch(removeColleague(index))
+    dispatch(removeColleague({ colleagueIndex: index }))
   }
 
   function handleFavorite() {
-    dispatch(favoriteColleague(index, !colleague.favorite))
+    dispatch(favoriteColleague({ colleagueIndex: index, favorite: !colleague.favorite }))
   }
 
   return (
