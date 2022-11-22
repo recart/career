@@ -1,6 +1,5 @@
-import React from 'react'
-import { ColleaguesList } from '../colleagues-list/colleagues-list.component'
 import { AddColleague } from '../add-colleague/add-colleague.component'
+import { ColleaguesList } from '../colleagues-list/colleagues-list.component'
 
 export function Layout() {
   return (
