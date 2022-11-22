@@ -1,7 +1,7 @@
-import { useDispatch } from 'react-redux'
 import { ReactComponent as StarFillIcon } from '../../assets/star-fill.svg'
 import { ReactComponent as StarIcon } from '../../assets/star.svg'
 import { ReactComponent as TrashIcon } from '../../assets/trash.svg'
+import { useAppDispatch } from '../../hooks/redux'
 import { favoriteColleague, removeColleague } from '../../store/reducers/colleagues.reducer'
 import { Colleague } from '../../store/types/colleague.type'
 
@@ -12,7 +12,7 @@ interface ColleagueProps {
 
 export function ColleagueRow(props: ColleagueProps) {
   const { colleague, index } = props
-  const dispatch = useDispatch()
+  const dispatch = useAppDispatch()
 
   function handleDelete() {
     dispatch(removeColleague({ colleagueIndex: index }))

@@ -1,10 +1,10 @@
 import { ChangeEvent, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useAppDispatch } from '../../hooks/redux'
 import { addColleague } from '../../store/reducers/colleagues.reducer'
 
 export function AddColleague() {
   const [name, setName] = useState('')
-  const dispatch = useDispatch()
+  const dispatch = useAppDispatch()
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
     setName(event.target.value)
