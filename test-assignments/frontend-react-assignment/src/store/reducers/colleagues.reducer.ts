@@ -1,10 +1,5 @@
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { Colleague } from '../types/colleague.type'
-import {
-  CREATE_COLLEAGUE,
-  REMOVE_COLLEAGUE,
-  FAVORITE_COLLEAGUE,
-  ColleagueActionTypes
-} from '../actions'
 
 export type ColleaguesState = Colleague[]
 
@@ -31,24 +26,25 @@ const initialState: ColleaguesState = [
   }
 ]
 
-export function colleaguesReducer(state = initialState, action: ColleagueActionTypes) {
-  switch (action.type) {
-    case CREATE_COLLEAGUE:
-      return state.concat(action.colleague)
-    case REMOVE_COLLEAGUE:
-      return state.filter((_, index) => index !== action.colleagueIndex)
-    case FAVORITE_COLLEAGUE:
-      return state.map((colleague, index) => {
-        if (index === action.colleagueIndex) {
-          return {
-            ...colleague,
-            favorite: action.favorite
-          }
-        }
-
-        return colleague
-      })
-    default:
-      return state
+export const colleaguesSlice = createSlice({
+  name: 'colleagues',
+  initialState,
+  reducers: {
+    addColleague: (state, action: PayloadAction<Colleague>) => {
+      state.push(action.payload)
+    },
+    removeColleague: (state, action: PayloadAction<{ colleagueIndex: number }>) => {
+      state.splice(action.payload.colleagueIndex, 1)
+    },
+    favoriteColleague: (
+      state,
+      action: PayloadAction<{ colleagueIndex: number; favorite: boolean }>
+    ) => {
+      state[action.payload.colleagueIndex].favorite = action.payload.favorite
+    }
   }
-}
+})
+
+export const { addColleague, removeColleague, favoriteColleague } = colleaguesSlice.actions
+
+export const { reducer: colleaguesReducer } = colleaguesSlice
