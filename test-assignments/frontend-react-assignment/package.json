@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "prepare": "cd ../.. && husky install test-assignments/frontend-react-assignment/.husky",
+    "prepare": "husky",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
