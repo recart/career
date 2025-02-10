@@ -16,7 +16,7 @@ Please submit the base project as your initial commit and implement the tasks in
 
 - Create a new component which does a basic pagination.
   - This component should contain 2 buttons (Prev, Next) which can paginate the colleague list in the correct direction. The list should only show 5 elements at a time.
-  - Hint: Try to use a Higher Order Component. Do NOT use a 3rd party library for the pagination feature itself but feel free to use any other package for the implementation.
+  - Try to make the pagination as reusable as possible. Do NOT use a 3rd party library for the pagination feature itself but feel free to use any other package for the implementation.
 - Collect the favorite colleagues in a separated list called the “favorites list” already seen on the UI.
   - Hint: The colleague objects already have a `favorite` boolean field.
   - Optional task: Make this list also pageable.
@@ -24,6 +24,8 @@ Please submit the base project as your initial commit and implement the tasks in
   - This field’s value should be presented in the colleague list.
 - Write unit tests for every new code you write, with a testing framework of your choice.
   - Hint: Our recommended unit testing framework is Jest.
+- During your implementation think about how an end user would use your app and make it as foolproof as possible. For example, if the user clicks the “Next” button on the last page, what should happen?
+  - Optional task: Is there anything that you would improve even in the original application? Feel free to implement your ideas or write them down for us in the readme.
 
 ## Usage
 
