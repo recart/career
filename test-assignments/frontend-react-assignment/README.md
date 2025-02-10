@@ -24,8 +24,8 @@ Please submit the base project as your initial commit and implement the tasks in
   - This field’s value should be presented in the colleague list.
 - Write unit tests for every new code you write, with a testing framework of your choice.
   - Hint: Our recommended unit testing framework is Jest.
-- Think about the UX of your implementation and make it as user-friendly as possible.
-  - Optional task: Is there anything that you would improve in the UI/UX of the original application? Feel free to implement your ideas or write them down for us in the readme.
+- During your implementation think about how an end user would use your app and make it as foolproof as possible. For example, if the user clicks the “Next” button on the last page, what should happen?
+  - Optional task: Is there anything that you would improve even in the original application? Feel free to implement your ideas or write them down for us in the readme.
 
 ## Usage
 
