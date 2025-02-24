@@ -1,6 +1,6 @@
-import StarFillIcon from '../../assets/star-fill.svg'
-import StarIcon from '../../assets/star.svg'
-import TrashIcon  from '../../assets/trash.svg'
+import StarFillIcon from '../../assets/star-fill.svg?react'
+import StarIcon from '../../assets/star.svg?react'
+import TrashIcon from '../../assets/trash.svg?react'
 import { useAppDispatch } from '../../hooks/redux'
 import { favoriteColleague, removeColleague } from '../../store/reducers/colleagues.reducer'
 import { Colleague } from '../../store/types/colleague.type'
@@ -31,14 +31,14 @@ export function ColleagueRow(props: ColleagueProps) {
           className='bg-gray-200 p-2 border border-gray-400 rounded-sm hover:bg-gray-100'
           onClick={handleFavorite}
         >
-          {colleague.favorite ? <img src={StarFillIcon} alt='favorited' /> : <img src={StarIcon} alt='favorite' />}
+          {colleague.favorite ?  <StarFillIcon /> : <StarIcon />}
         </button>
         <button
           type='button'
           className='bg-gray-200 p-2 border border-gray-400 rounded-sm hover:bg-gray-100'
           onClick={handleDelete}
         >
-          <img src={TrashIcon} alt='delete' />
+          <TrashIcon />
         </button>
       </div>
     </div>
