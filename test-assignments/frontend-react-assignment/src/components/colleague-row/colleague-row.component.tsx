@@ -28,14 +28,14 @@ export function ColleagueRow(props: ColleagueProps) {
       <div className='space-x-2'>
         <button
           type='button'
-          className='bg-gray-200 p-2 border border-gray-400 rounded hover:bg-gray-100'
+          className='bg-gray-200 p-2 border border-gray-400 rounded-sm hover:bg-gray-100'
           onClick={handleFavorite}
         >
           {colleague.favorite ? <img src={StarFillIcon} alt='favorited' /> : <img src={StarIcon} alt='favorite' />}
         </button>
         <button
           type='button'
-          className='bg-gray-200 p-2 border border-gray-400 rounded hover:bg-gray-100'
+          className='bg-gray-200 p-2 border border-gray-400 rounded-sm hover:bg-gray-100'
           onClick={handleDelete}
         >
           <img src={TrashIcon} alt='delete' />
