@@ -8,6 +8,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -28,13 +30,21 @@
     "typescript": "^5.7.3"
   },
   "devDependencies": {
+    "@eslint/js": "^9.21.0",
     "@tailwindcss/vite": "^4.0.8",
     "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
     "husky": "^9.1.7",
+    "jsdom": "^26.0.0",
     "lint-staged": "^15.4.3",
     "prettier": "^3.5.2",
     "tailwindcss": "^4.0.8",
-    "vite": "^6.1.1"
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.1.1",
+    "vitest": "^3.0.6"
   },
   "lint-staged": {
     "*.{js,ts,tsx,css,md}": "prettier --write"
