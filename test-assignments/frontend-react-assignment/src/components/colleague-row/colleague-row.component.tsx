@@ -31,7 +31,7 @@ export function ColleagueRow(props: ColleagueProps) {
           className='bg-gray-200 p-2 border border-gray-400 rounded-sm hover:bg-gray-100'
           onClick={handleFavorite}
         >
-          {colleague.favorite ?  <StarFillIcon /> : <StarIcon />}
+          {colleague.favorite ? <StarFillIcon /> : <StarIcon />}
         </button>
         <button
           type='button'
