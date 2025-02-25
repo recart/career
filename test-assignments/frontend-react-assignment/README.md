@@ -33,5 +33,5 @@ Download / clone this repository and run these commands in this directory:
 
 ```
 npm install
-npm start
+npm run dev
 ```
