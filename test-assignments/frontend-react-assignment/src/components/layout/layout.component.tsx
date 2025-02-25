@@ -3,7 +3,7 @@ import { ColleaguesList } from '../colleagues-list/colleagues-list.component'
 
 export function Layout() {
   return (
-    <div className='flex flex-col items-center justify-center mt-40 w-100'>
+    <div className='flex flex-col items-center justify-center mt-40 w-full'>
       <div className='container'>
         <div className='flex flex-wrap md:flex-nowrap gap-5'>
           <div className='w-full md:w-1/2'>

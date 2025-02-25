@@ -15,10 +15,10 @@ export function AddColleague() {
   }
 
   return (
-    <div className='flex h-10 drop-shadow-sm'>
+    <div className='flex h-10 drop-shadow-xs'>
       <input
         type='text'
-        className='w-full px-2 focus:outline-none border-b border-gray-400'
+        className='w-full px-2 focus:outline-hidden border-b border-gray-400'
         onChange={handleChange}
         placeholder='Name'
       />
