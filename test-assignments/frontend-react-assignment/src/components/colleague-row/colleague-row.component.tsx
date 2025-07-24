@@ -5,12 +5,12 @@ import { useAppDispatch } from '../../hooks/redux'
 import { favoriteColleague, removeColleague } from '../../store/reducers/colleagues.reducer'
 import { Colleague } from '../../store/types/colleague.type'
 
-interface ColleagueProps {
+interface ColleagueRowProps {
   index: number
   colleague: Colleague
 }
 
-export function ColleagueRow(props: ColleagueProps) {
+export function ColleagueRow(props: ColleagueRowProps) {
   const { colleague, index } = props
   const dispatch = useAppDispatch()
 
