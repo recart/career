@@ -22,8 +22,7 @@ Please submit the base project as your initial commit and implement the tasks in
   - Optional task: Make this list also pageable.
 - Add a new input field on the UI to be able to record the title for a new colleague.
   - This field’s value should be presented in the colleague list.
-- Write unit tests for every new code you write, with a testing framework of your choice.
-  - Hint: Our recommended unit testing framework is Jest.
+- Write unit tests for every new code you write.
 - During your implementation think about how an end user would use your app and make it as foolproof as possible. For example, if the user clicks the “Next” button on the last page, what should happen?
   - Optional task: Is there anything that you would improve even in the original application? Feel free to implement your ideas or write them down for us in the readme.
 
