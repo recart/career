@@ -12,7 +12,7 @@ Spend a maximum of 5 hours on this assignment. Add comments or README notes to e
 
 Ask questions to clarify the business needs and details. Estimate what can be done within the 5-hour timeframe and let us know if we need to cut the scope.
 
-Submit your code via `bitbucket.org` by creating a **private** repository and sharing it with `developer-account@recart.com`.
+To share your code please create a **private** repository on either GitHub or BitBucket and send an invitation to `developer-account@recart.com`. ([Help for sharing on BitBucket](https://support.atlassian.com/bitbucket-cloud/docs/grant-repository-access-to-users-and-groups/))
 
 ---
 

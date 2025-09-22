@@ -1,4 +1,4 @@
-# Recart 
+# Recart
 
 ### Business Intelligence Test Assignment
 
@@ -10,7 +10,7 @@ Don't stress if you can't get every part done -- spend a maximum of 5 hours on t
 
 Feel free to ask questions to clarify the business need and the details. Also, try to estimate what can be done within the 5 hours time frame and let us know if we need to cut the scope.
 
-Submit your code through `bitbucket.org` by creating a **private** repository and sharing it with the `developer-account@recart.com` email address.
+To share your code please create a **private** repository on either GitHub or BitBucket and send an invitation to `developer-account@recart.com`. ([Help for sharing on BitBucket](https://support.atlassian.com/bitbucket-cloud/docs/grant-repository-access-to-users-and-groups/))
 
 ---
 

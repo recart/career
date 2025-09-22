@@ -8,7 +8,7 @@ Don't stress if you can't get every part done -- spend a maximum of 5 hours on t
 
 The main objective is that the code you submit is well-structured and covered with unit tests.
 
-Submit your code through `BitBucket` by creating a private repository and sharing it with the `developer-account@recart.com` email address.
+To share your code please create a **private** repository on either GitHub or BitBucket and send an invitation to `developer-account@recart.com`. ([Help for sharing on BitBucket](https://support.atlassian.com/bitbucket-cloud/docs/grant-repository-access-to-users-and-groups/))
 
 Please submit the base project as your initial commit and implement the tasks in separate commits to make the review easier.
 
