@@ -37,7 +37,6 @@ orders:
     - phone_number - text, must be a valid phone number, can be null
     - created_at - timestamp, cannot be null
 
-
 **Other properties of the datasets:**
 
 There should be at least:
