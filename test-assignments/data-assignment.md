@@ -77,4 +77,14 @@ Max 6 hours. Ask questions up front to clarify the details, estimate what fits i
 
 ## Submitting
 
-Submit via Hex by inviting `developer-account@recart.com`.
+Submit via Hex by inviting `developer-account@recart.com`. If you want to share anything on GitHub, please use `developer-account@recart.com` for that, too.
+
+## Performance optimizations
+
+Please give us "short" answers to the following questions. If a piece of code would give absolute clarity please attached that as well. It is as important to elaborate on the why as giving the answer, so please make sure you share it with us. (You can upload the answer into the same Hex solution.)
+
+- How would you optimize the lookups or more complex queries for emails and phone numbers? What would be a good enough solution and the best solution in your opinion?
+
+- In most of the cases we query the database in the scope of a merchant, how would you optimize data access to speed these queries?
+
+- How would you optimize scan operations? Can you share a good enough and the best possible solution with us as well?
