@@ -1,12 +1,12 @@
 # Recart
 
-### Business Intelligence Test Assignment
+### Data Analyst Test Assignment
 
 The goal of the assignment is to get a picture of your programming skills and coding style.
 
-We prefer NodeJS or Go but you can choose any programming language that you're comfortable with.
+We prefer SQL or Python, but you can use any language you're comfortable with.
 
-Don't stress if you can't get every part done -- spend a maximum of 5 hours on this assignment. Feel free to add comments or README notes to help us understand your thinking and decisions. If we like your code overall, we'll discuss the solution in person too so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
+Don't stress if you can't get every part done -- spend a maximum of 4 hours on this assignment. Feel free to add comments or README notes to help us understand your thinking and decisions. If we like your code overall, we'll discuss the solution in person too so you'll get a chance to tell us what else you wanted to add and how you planned to implement those.
 
 Feel free to ask questions to clarify the business need and the details. Also, try to estimate what can be done within the 5 hours time frame and let us know if we need to cut the scope.
 
@@ -21,11 +21,16 @@ We use Intercom on our website and also on our Dashboard to communicate with our
 To give our customers a great support experience we need to measure how good our performance is, so we defined the following KPIs:
 
 - Median first response time (in minutes)
+- Median first response time (in minutes) by priority
+
 - Median time to close (in hours)
+- Median time to close (in hours) by priority.
 
 Your task is to synchronize data from Intercom to an RDBMS engine and write queries that return the data for the KPIs. Intercom gives free trial to every developer.
 
 To calculate the above KPIs you should use the conversation model ([https://developers.intercom.com/intercom-api-reference/reference#conversation-model](https://developers.intercom.com/intercom-api-reference/reference#conversation-model)).
+
+Additionally, we would like to understand how AI helped us the achieve these numbers. Where it helps, and where it does not help. Please change the visualisation of the KPIs to be able to show these datapoints as well.
 
 ### Requirements
 
